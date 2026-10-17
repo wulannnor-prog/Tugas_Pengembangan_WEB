@@ -1,0 +1,31 @@
+header {
+    background-color: beige;
+    outline-style: double;
+    text-align: center;
+    padding: 10px;
+    border: 50px;
+}
+
+.teks-panjang{
+    color: aquamarine;
+    background-color: aliceblue;
+    text-align: center;
+    text-align-last: right;
+    font-size: 70px;
+}
+
+.paragraf {
+    font-family: 40px;
+    text-indent: 200px;
+    line-height: 2.0;
+    word-spacing: 20px;
+}
+
+@font-face {
+    font-family: 'lunar';
+    src: url(font/Dream\ Notes\ Demo.ttf) format('opentype');
+}
+
+body{
+    font-family:'lunar' ;
+}
