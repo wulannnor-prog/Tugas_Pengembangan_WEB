@@ -1,0 +1,291 @@
+
+/* Pengaturan halaman */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #faf7f0;
+    color: #40352d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+/* Header */
+header {
+    background-color: #eee4d5;
+    padding: 18px 6%;
+    outline: 2px solid #d6c4ad;
+    outline-offset: -5px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: #704c38;
+}
+
+header p {
+    margin-bottom: 5px;
+}
+
+/* Navigasi */
+nav {
+    padding: 13px 6%;
+    border-bottom: 1px solid #ded3c5;
+}
+
+nav a {
+    color: #57483c;
+    text-decoration: none;
+    margin-right: 23px;
+}
+
+nav a:hover {
+    color: #a36d48;
+    text-decoration: underline;
+}
+
+/* Bagian sambutan */
+.sambutan {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 6%;
+}
+
+.sambutan div {
+    flex: 1;
+}
+
+.sambutan h2 {
+    font-size: 32px;
+    line-height: 1.3;
+    margin: 8px 0;
+    color: #704c38;
+}
+
+.sambutan p {
+    line-height: 1.8;
+}
+
+.sambutan img {
+    width: 45%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #8b795e;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 9px 16px;
+    background-color: #80634b;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #a17d5c;
+}
+
+/* Bagian menu */
+.bagian-menu {
+    padding: 20px 6%;
+}
+
+.judul {
+    margin-bottom: 20px;
+}
+
+.judul h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.judul p {
+    color: #817467;
+}
+
+/* Kartu produk */
+.kumpulan-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.kartu {
+    width: calc(25% - 15px);
+    background-color: #fffdf9;
+    border: 1px solid #e4d9ca;
+    padding: 10px;
+}
+
+.kartu img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+}
+
+.isi {
+    padding: 5px 3px;
+}
+
+.kategori {
+    font-size: 10px;
+    color: #96724f;
+    letter-spacing: 1px;
+}
+
+.isi h3 {
+    font-size: 16px;
+    margin: 7px 0;
+}
+
+.isi p {
+    line-height: 1.6;
+    min-height: 45px;
+    color: #75695e;
+}
+
+.bawah {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.bawah span {
+    font-weight: 600;
+    color: #80573c;
+}
+
+.bawah a {
+    color: #80573c;
+    font-size: 12px;
+}
+
+/* Menu favorit */
+.favorit {
+    margin: 25px 6%;
+    padding: 20px;
+    background-color: #eee8dc;
+    border-left: 4px solid #a17d5c;
+}
+
+.favorit h2 {
+    font-size: 21px;
+}
+
+.favorit ul {
+    padding-left: 22px;
+    line-height: 2;
+    list-style-type: square;
+}
+
+/* Tabel harga */
+.daftar-harga {
+    padding: 15px 6% 35px;
+}
+
+.daftar-harga h2 {
+    font-size: 23px;
+}
+
+.daftar-harga p {
+    color: #817467;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fffdf9;
+}
+
+th, td {
+    padding: 11px;
+    border-bottom: 1px solid #e2d8ca;
+    text-align: left;
+}
+
+th {
+    background-color: #80634b;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2ece2;
+}
+
+/* Footer */
+footer {
+    background-color: #4a382d;
+    color: #fffaf2;
+    padding: 18px 6%;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 19px;
+}
+
+footer p {
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* Tampilan HP */
+@media screen and (max-width: 750px) {
+    .sambutan {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sambutan img {
+        width: 100%;
+        height: 210px;
+    }
+
+    .kartu {
+        width: calc(50% - 10px);
+    }
+
+    .sambutan h2 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .kartu {
+        width: 100%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 12px 5px 0;
+    }
+
+    .bagian-menu {
+        padding: 15px;
+    }
+
+    .favorit {
+        margin: 15px;
+    }
+
+    .daftar-harga {
+        overflow-x: auto;
+        padding: 15px;
+    }
+
+    table {
+        min-width: 480px;
+    }
+}
